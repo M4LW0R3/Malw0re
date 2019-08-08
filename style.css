@@ -91,19 +91,21 @@ img {
     display: inline-block;
     line-height: 1em;
 }
-h1{
+
+h1 {
     color: #ffffff;
-    font-family:Roboto; 
+    font-family: Roboto;
     font-size: 46px !important;
     font-weight: bolder !important;
     margin-bottom: 0%;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
-#tagline{
+
+#tagline {
     width: 640px;
 }
 
-p{
+p {
     color: rgb(95, 95, 95);
     font-weight: 200;
     font-family: "Roboto";
@@ -112,9 +114,10 @@ p{
     margin-bottom: 0;
 }
 
-.buttons{
+.buttons {
     margin-top: 40px;
 }
+
 button {
     margin-right: 10px !important;
     padding: 14px 30px;
@@ -122,47 +125,55 @@ button {
     color: #ffffff;
     font-size: 12px !important;
     letter-spacing: 4px;
-    font-weight:400;
+    font-weight: 400;
 }
 
-#one{
+
+#one {
     background: none;
     border: .3pt soli rgba(225, 225, 225, 0.3);
 }
-  
-#two{
+
+#two {
     background: linear-gradient(135deg, rgb(106, 219, 157) 0%, rgb(23, 167, 88)100%);
 }
 
-.media{
+#two:hover {
+    background: #121212;
+}
+
+.media {
     position: absolute;
     top: 36px;
     z-index: 1;
     right: 6%;
+      
 }
-.media ul{
+
+.media ul {
     position: absolute;
     list-style: none;
-}
+} 
 
 
-.media ul li{
+.media ul li {
     color: grey;
     padding: 12px 0;
     display: inline-block !important;
 
 }
-.bottom-text{
-   position: absolute;
-   z-index: 1;
-   color:grey;
-   font-size: 18px;
-   font-family: monospace;
-   margin-left: 2em;
-   bottom: 40px; 
+
+.bottom-text {
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    font-size: 18px;
+    font-family: monospace;
+    margin-left: 2em;
+    bottom: 40px;
 }
 
-.copyright{
+.copyright {
     position: absolute;
     z-index: 1;
     color: grey;
@@ -174,7 +185,7 @@ button {
     right: 0%;
 }
 
-.loading-screen{
+.loading-screen {
     position: absolute;
     width: 10 0%;
     height: 100vh;
@@ -183,10 +194,10 @@ button {
     right: 100px;
 }
 
-.ring{
+.ring {
     margin: 0%;
     padding: 0%;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: Z;
@@ -195,33 +206,36 @@ button {
     opacity: 0.9;
 }
 
-.ringOne img{
+.ringOne img {
     animation: rotateRing 2s linear infinite;
 }
 
-.ringTwo img{
+.ringTwo img {
     animation: rotateRing 8s linear infinite;
 }
 
-@keyframes rotateRing{
-    from{
+@keyframes rotateRing {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
 
+@media(max-width: 900px) {
+    .loading-screen {
+        display: none;
+    }
 
+    .ring img {
+        display: none;
+    }
 
-
-
-
-
-
-
-
-
-
-
- 
+    .header p,
+    button,
+    .media h1 {
+        display: none;
+    }
+}
