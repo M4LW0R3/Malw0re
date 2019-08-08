@@ -131,8 +131,12 @@ button {
 }
 
 #two {
-    background: linear-gradient(135deg, rgb(106, 219, 157) 0%, rgb(23, 167, 88) 100%);;
+    background: linear-gradient(135deg, rgb(106, 219, 157) 0%, rgb(23, 167, 88) 100%);
 }
+#two:hover{
+    background: #121212;
+}
+
 
 .media {
     position: absolute;
