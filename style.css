@@ -119,4 +119,109 @@ button {
     margin-right: 10px !important;
     padding: 14px 30px;
     border: none;
+    color: #ffffff;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    font-weight:400;
 }
+
+#one{
+    background: none;
+    border: .3pt soli rgba(225, 225, 225, 0.3);
+}
+  
+#two{
+    background: linear-gradient(135deg, rgb(106, 219, 157) 0%, rgb(23, 167, 88)100%);
+}
+
+.media{
+    position: absolute;
+    top: 36px;
+    z-index: 1;
+    right: 6%;
+}
+.media ul{
+    position: absolute;
+    list-style: none;
+}
+
+
+.media ul li{
+    color: grey;
+    padding: 12px 0;
+    display: inline-block !important;
+
+}
+.bottom-text{
+   position: absolute;
+   z-index: 1;
+   color:grey;
+   font-size: 18px;
+   font-family: monospace;
+   margin-left: 2em;
+   bottom: 40px; 
+}
+
+.copyright{
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin-right: 2em;
+    bottom: 40px;
+    right: 0%;
+}
+
+.loading-screen{
+    position: absolute;
+    width: 10 0%;
+    height: 100vh;
+    background: #0a0a0a;
+    z-index: Z;
+    right: 100px;
+}
+
+.ring{
+    margin: 0%;
+    padding: 0%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: Z;
+    position: absolute;
+    width: 40%;
+    opacity: 0.9;
+}
+
+.ringOne img{
+    animation: rotateRing 2s linear infinite;
+}
+
+.ringTwo img{
+    animation: rotateRing 8s linear infinite;
+}
+
+@keyframes rotateRing{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
